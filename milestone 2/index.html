@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> calcolo del prezzo del biglietto del treno</title>
+</head>
+<body>
+  <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+  <div class="container form-container">
+    <form action="">
+      <div class="form-info">
+        <div class="selection">
+          <label for="">Nome Cognome</label>
+          <input type="text" id="name" placeholder="inserisci nome e cognome">
+        </div>
+        <div class="selection">
+          <label for="">km da percorrere</label>
+        <input type="number" id="distance" placeholder="inserisci kilometri"></div>
+        <div class="selection">
+          <label for="">età</label>
+        <input type="number" id="forDiscount" placeholder="inserisci età"></div>
+      </div>
+
+      <div class="form-button">
+        <button type="button" id="click-button">
+          <h5>genera</h5>
+        </button>
+        <button type="reset"><h5>annnulla</h5></button>
+      </div>
+    </form>
+  </div>
+
+  <h1>IL TUO BIGLIETTO</h1>
+  <div class="container">
+    <h3>DETTAGLIO PASSEGGERI</h3>
+    <div class="dati">
+      <div class="name-ticket">
+        <h3>NOME PASSEGGERO</h3>
+        <p id="naming"></p>
+      </div>
+      <div class="ticket-details">
+        <div>
+          <h4>Offerta</h4>
+          <p>Biglietto Standard</p>
+        </div>
+        <div>
+          <h4>Carrozza</h4>
+          <p id="ramdom1"></p>
+        </div>
+        <div>
+          <h4>Codice CP</h4>
+          <p id="ramdom2"></p>
+        </div>
+        <div>
+          <h4>Costo Biglietto</h4>
+          <p id="myid"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

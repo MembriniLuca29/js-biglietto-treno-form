@@ -12,20 +12,24 @@ clickButton.addEventListener("click",
         
     const distance = document.getElementById('distance');
 
-    const forDiscount = document.getElementById('forDiscount');
+    const age = document.getElementById('age').value;
 
+    // const minorenne = document.getElementById('minorenne');
 
+    // const over65 = document.getElementById('over65');
 
     let priceForDistance = distance.value  * 0.21;
 
 
-    if(forDiscount.value < 18){
+    if(age == "minorenne"){
         priceForDistance = priceForDistance * 0.8;
         console.log(priceForDistance, typeof priceForDistance);
     } 
-    else if (forDiscount.value >= 65){
+    
+   else if (age == "over 65"){
         priceForDistance =(priceForDistance * 0.6);
         console.log(priceForDistance, typeof priceForDistance);
+
     } 
 
    

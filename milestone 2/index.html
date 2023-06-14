@@ -18,10 +18,17 @@
         </div>
         <div class="selection">
           <label for="">km da percorrere</label>
-        <input type="number" id="distance" placeholder="inserisci kilometri"></div>
+        <input type="number" id="distance" required min="1" placeholder="inserisci kilometri"></div>
         <div class="selection">
           <label for="">età</label>
-        <input type="number" id="forDiscount" placeholder="inserisci età"></div>
+          <select name="age" id="age">
+            <option  >maggiorenne</option>
+            <option  >minorenne</option>
+            <option  >over 65</option>
+          </select>
+          <!-- <label for="">età</label>
+        <input type="number" id="forDiscount" placeholder="inserisci età"> -->
+      </div>
       </div>
 
       <div class="form-button">
